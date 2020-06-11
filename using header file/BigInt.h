@@ -6,13 +6,16 @@ class BigInt {
         std::string number;
     public:
         BigInt();
-        BigInt(const char arr[]);
+        BigInt(const char[]);
+        BigInt(std::string);
+        BigInt(int);
 
-        friend std::istream& operator>> (std::istream& stream, BigInt& obj);
-        friend std::ostream& operator<< (std::ostream& stream, BigInt& obj);
+        friend std::istream& operator>> (std::istream&, BigInt&);
+        friend std::ostream& operator<< (std::ostream&, BigInt&);
 
-        BigInt operator+ (BigInt& other);
-        BigInt operator* (BigInt& other);
-        BigInt reverse();
+        BigInt operator+ (BigInt&);
+        BigInt operator+ (int);
+        BigInt operator* (BigInt&);
+        BigInt operator* (int);
+        bool operator<= (BigInt&);
 };
-

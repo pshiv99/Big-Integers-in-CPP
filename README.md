@@ -16,7 +16,7 @@ functionality in C++, I did this little project that can handle big integers and
         - *Addition operator (+)*
         - *Multiplication operator (\*)*
     - This overloading of operators provides the same interface as provided for primitive data type `int`.
-    
+   
         ```cpp
         class BigInt {
             private:
