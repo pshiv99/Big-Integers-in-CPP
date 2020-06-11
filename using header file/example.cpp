@@ -10,7 +10,7 @@ int main() {
     cout<<"The second number is: "<<j<<endl;
 
     BigInt result = i * j;
-    cout<<"The result is: "<<result;
+    cout<<"The multiplication is: "<<result;
     
     return 0;
 }
