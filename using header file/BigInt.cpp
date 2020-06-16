@@ -135,3 +135,10 @@ ostream& operator<< (ostream& stream, BigInt& obj) {
     return stream;
 }
 
+//-------------------------------------Other Member Functions-------------------------------------
+
+int BigInt::length() {
+    return this->number.size();
+}
+
+
