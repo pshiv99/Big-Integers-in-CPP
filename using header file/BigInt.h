@@ -17,5 +17,6 @@ class BigInt {
         BigInt operator+ (int);
         BigInt operator* (BigInt&);
         BigInt operator* (int);
+        int length();
         bool operator<= (BigInt&);
 };
